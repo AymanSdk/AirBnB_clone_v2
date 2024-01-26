@@ -28,7 +28,7 @@ def c_text(text):
 @app.route('/python')
 @app.route('/python/<text>')
 def python_text(text='is cool'):
-    """ Python + text 
+    """ Python + text
     first route: /python
     to ensure that text is set to “is cool” if the argument text is not passed
     """
