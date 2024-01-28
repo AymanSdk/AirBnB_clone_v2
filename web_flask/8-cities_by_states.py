@@ -9,7 +9,8 @@ script starts Flask web app
             /number/<n>:          display "n is a number" only if int
             /number_template/<n>: display HTML page only if n is int
             /number_odd_or_even/<n>: display HTML page; display odd/even info
-            /states_list:         display HTML and state info from storage;
+            /states_list:         display HTML and state info from storage
+            /cities_by_states:    display HTML and state, city relations
 """
 from models import storage
 from models import *
@@ -99,5 +100,5 @@ def html_fetch_cities_by_states():
                            state_objs=state_objs)
 
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0 ', port=5000, debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
